@@ -1,6 +1,7 @@
 package net.garlion1.mod;
 
 import net.fabricmc.api.ModInitializer;
+import net.garlion1.mod.block.ModBlocks;
 import net.garlion1.mod.item.Modems;
 
 import org.slf4j.Logger;
@@ -13,5 +14,6 @@ public class TestMod implements ModInitializer {
 	@Override
 	public void onInitialize() {
         Modems.registerModItems();
+        ModBlocks.registerModBlocks();
 	}
 }
