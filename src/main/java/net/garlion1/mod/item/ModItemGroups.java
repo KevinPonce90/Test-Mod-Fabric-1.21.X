@@ -3,7 +3,6 @@ package net.garlion1.mod.item;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.garlion1.mod.TestMod;
 import net.garlion1.mod.block.ModBlocks;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -20,6 +19,8 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(Modems.PINK_GARNET);
                         entries.add(Modems.RAW_PINK_GARNET);
+
+                        entries.add(Modems.CHISEL);
                     }).build());
 
     public static final ItemGroup PINK_GARNET_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
